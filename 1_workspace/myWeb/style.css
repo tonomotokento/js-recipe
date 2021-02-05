@@ -1,0 +1,16 @@
+h2 , h3 , h4{
+  text-align: center;
+}
+.list{
+  display:flex;
+  justify-content: center;
+}
+.dentaku{
+  display: flex;
+  justify-content: center;
+}
+html{
+  background-size: auto;
+  background-image: url(https://illust.download/wp-content/uploads/2020/06/wrapping086Cy3.jpg);
+  background-size: cover;
+}
