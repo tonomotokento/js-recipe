@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vue自動販売機</title>
+</head>
+<body>
+  <div id="app">
+    <p>合計金額{{totalMoney}}</p>
+    <p>お茶{{drinkPrice}}円</p>
+    <button v-on:click="purchase">購入</button>
+    <input v-model="inputMoney" type="number">
+    <button v-on:click="addTotalMoney">投入</button>
+    <div v-if="isPurchased">お茶が買えたよ</div>
+    <p>お茶の本数{{drinkNumber}}本</p>
+    <ul>
+      <li v-for="drink in drinks">{{drink}}</li>
+    </ul>
+  </div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
